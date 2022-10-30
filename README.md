@@ -24,9 +24,9 @@ The input contains results of games, one per line. See "Sample input" for detail
 - Lions 4, Grouches 0
 
 ## Output
-The output will be ordered from most to least points, following the format specified in "Example output".
+The output will be ordered from most to least points, following the format specified in "Expected output".
 
-### Example output
+### Expected output
 1. Tarantulas, 6 pts
 2. Lions, 5 pts
 3. FC Awesome, 1 pt
@@ -37,7 +37,7 @@ The output will be ordered from most to least points, following the format speci
 Maven (including Junit and exec-maven-plugin)
 
 ## Usage
-In order to build, test and run the app is using Maven as follows:
+To build, test and run the app use Maven as follows:
 
 ```
 mvn clean compile test exec:java -Dexec.args="success1.txt"
