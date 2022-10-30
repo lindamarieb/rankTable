@@ -13,7 +13,7 @@ If two or more teams have the same number of points, they should have the same r
 printed in alphabetical order (as in the tie for 3rd place in the sample data).
 
 ## Input
-The input will be text files - filename specified on the command line.
+The input is provided via text files. The filename must be specified on the command line.
 The input contains results of games, one per line. See "Sample input" for details.
 
 ### Sample input
@@ -24,9 +24,9 @@ The input contains results of games, one per line. See "Sample input" for detail
 - Lions 4, Grouches 0
 
 ## Output
-The output will be ordered from most to least points, following the format specified in "Example output".
+The output will be ordered from most to least points, following the format specified in "Expected output".
 
-### Example output
+### Expected output
 1. Tarantulas, 6 pts
 2. Lions, 5 pts
 3. FC Awesome, 1 pt
@@ -34,15 +34,32 @@ The output will be ordered from most to least points, following the format speci
 5. Grouches, 0 pts
 
 ## Dependencies
-Maven (including Junit and exec-maven-plugin)
+Maven (including Java 8, Junit and exec-maven-plugin)
 
 ## Usage
-In order to build, test and run the app is using Maven as follows:
+To build, test and run the app use Maven as follows:
 
 ```
 mvn clean compile test exec:java -Dexec.args="success1.txt"
 ```
 
 These commands can also be executed separately.
+
+To compile
+```
+mvn clean compile
+```
+
+To run unit tests
+```
+mvn test
+```
+
+To execute the app without Maven
+```
+java -classpath target/classes RankTable success1.txt
+```
+
+Where success1.txt is the name if the file with containing the match result text.
 
 Test files for success and failure cases are included in the root folder.
