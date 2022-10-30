@@ -13,7 +13,7 @@ If two or more teams have the same number of points, they should have the same r
 printed in alphabetical order (as in the tie for 3rd place in the sample data).
 
 ## Input
-The input will be text files - filename specified on the command line.
+The input is provided via text files. The filename must be specified on the command line.
 The input contains results of games, one per line. See "Sample input" for details.
 
 ### Sample input
