@@ -34,7 +34,7 @@ The output will be ordered from most to least points, following the format speci
 5. Grouches, 0 pts
 
 ## Dependencies
-Maven (including Junit and exec-maven-plugin)
+Maven (including Java 1.8, Junit and exec-maven-plugin)
 
 ## Usage
 To build, test and run the app use Maven as follows:
